@@ -1,0 +1,8 @@
+<%= flash[:success] %>
+<p class="s-title">Title:</p>
+	<div class="show"><%= @post.title %></div>
+<p class="s-title">Body</p>
+	<div class="show"><%= @post.body %></div>
+
+<%= link_to "Edit", edit_post_path(@post.id),class: "edit_#{@post.id}" %>
+<%=link_to "Back", :back, class: "back" %>
