@@ -14,5 +14,4 @@ get "/posts/:id/edit" => "posts#edit", as: "edit_post"
 patch "/posts/:id" => "posts#update", as: "update_post"
 
 delete "/posts/main/:id" => "posts#destroy", as: "destroy_post"
-root :to => 'info#main'
 end

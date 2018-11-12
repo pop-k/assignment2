@@ -5,4 +5,4 @@
 	<div class="show"><%= @post.body %></div>
 
 <%= link_to "Edit", edit_post_path(@post.id),class: "edit_#{@post.id}" %>
-<%=link_to "Back", :back, class: "back" %>
+<%=link_to "Back", posts_path, class: "back" %>
